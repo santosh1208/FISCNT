@@ -10,7 +10,7 @@
 		"smallIcon": "Fiscodeconnect.png",
 		"description": "This activity receives a message from the standard queue"
 	},
-	"ref": "github.com/santosh1208/FISCNT/activity/fis/createcustomer",
+	"ref": "github.com/santosh1208/FISCNT/activity/createcustomer",
 	"inputs": [
 		{
 			"name": "FISConnection",
