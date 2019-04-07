@@ -1,0 +1,41 @@
+{
+	"name": "createcustomer",
+	"title": "Create FIS Customer",
+	"version": "1.0.0",
+	"author": "TIBCO Software Inc.",
+	"type": "flogo:activity",
+	"display": {
+		"category": "FISCNT",
+		"visible": true,
+		"smallIcon": "Fiscodeconnect.png",
+		"description": "This activity receives a message from the standard queue"
+	},
+	"ref": "FISCNT/activity/createcustomer",
+	"inputs": [
+		{
+			"name": "FISConnection",
+			"type": "object",
+			"required": true,
+			"display": {
+				"name": "FIS Connection",
+				"description": "Select FIS Connection",
+				"type": "connection"
+			},
+			"allowed": []
+		},
+			
+
+		{ "name": "Customer", 
+			"type": "object",
+			"required": true
+			}
+			
+		
+	],
+	"outputs": [
+		{
+			"name": "Message",
+			"type": "string"
+		}
+	]
+}

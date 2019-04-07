@@ -1,0 +1,63 @@
+{
+  "name": "tibco-fis",
+  "title": "FISConnect Connector",
+  "author": "TIBCO Software Inc.",
+  "type": "flogo:connector",
+  "version": "1.0.0",
+  "display": {
+    "description": "This is FISConnect  connector",
+    "category": "FISCNT",
+    "visible": true,
+    "smallIcon": "Fiscodeconnect.png"
+  },
+  "ref": "FISCNT/connector/sqs",
+  "keyfield": "name",
+  "settings": [
+    {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "display": {
+        "name": "Connection Name",
+        "description": "Name of the connection"
+      }
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "display": {
+        "name": "Description",
+        "description": "Connection description"
+      }
+    },
+    {
+      "name": "ConsumerKey",
+      "type": "string",
+      "required": true,
+      "display": {
+        "name": "ConsumerKey ",
+        "description": "Consumer Key of the FIS ",
+        "type": "password"
+      }
+    },
+    {
+      "name": "ConsumerSecret",
+      "type": "string",
+      "required": true,
+      "display": {
+        "name": "ConsumerSecret",
+        "description": "FIS Connect Consumer Secret",
+        "type": "password"
+      }
+    }
+    
+  ],
+  "actions": [
+    {
+      "name": "Connect",
+      "display": {
+        "readonly": true
+      }
+    }
+  ]
+}

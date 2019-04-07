@@ -1,0 +1,57 @@
+{
+    "name": "GetCustomer",
+    "version": "1.0.0",
+    "author": "TIBCO Software Inc.",
+    "type": "flogo:activity",
+    "title": "Get FIS Customer",
+     
+    "display": {
+       "category": "FISCNT",
+       "visible": true,
+       "smallIcon": "Fiscodeconnect.png",
+       "description": "This activity gets customer details "
+    },
+ 
+    "ref": "FISCNT/activity/GetCustomer",
+    "inputs": [
+           {
+            "name": "FISConnection",
+            "type": "object",
+            "required": true,
+            "display":{
+              "name": "FIS Connection",
+              "description": "Select FIS Connection",
+              "type": "connection"
+            },
+            "allowed":[]
+           },
+           
+           {
+            "name": "CustomerID",
+            "type": "string",
+            "required": true
+           }
+
+
+           
+           
+           
+    ],
+
+
+    
+     
+  
+    "outputs": [
+           {
+            "name": "responseBody", 
+            "type": "complex_object", 
+            "display": {
+               "type": "texteditor", 
+               "description": "An example JSON data that you expect back from the REST service", 
+               "name":"Response Schema", 
+               "syntax":"json" } 
+              }
+          
+    ]
+}
