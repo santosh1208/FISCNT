@@ -10,7 +10,7 @@
     "visible": true,
     "smallIcon": "Fiscodeconnect.png"
   },
-  "ref": "github.com/santosh1208/FISCNT/tree/master/connector/sqs",
+  "ref": "github.com/santosh1208/FISCNT/connector/sqs",
   "keyfield": "name",
   "settings": [
     {
